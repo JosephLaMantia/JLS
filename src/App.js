@@ -10,8 +10,10 @@ function App() {
     <div className="App">
 
     <SideNav/>
-    <Welcome/>
-    <Projects/>
+    <div id='content'>
+      <Welcome/>
+      <Projects/>
+    </div>
 
     </div>
   );

@@ -14,6 +14,13 @@ body {
   background-attachment: fixed;
 }
 
+#content{
+  display: flex;
+  width: 70vw;
+  float: right;
+  flex-wrap: wrap;
+}
+
 
 
 
@@ -27,7 +34,13 @@ body {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color:rgb(255, 255, 255, 0.50);
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),
+  url('https://cutewallpaper.org/21/aesthetic-anime-desktop-wallpaper/1920x1080-Photo-Background-Elkgroveses.com.jpg');;
+  background-size: cover;
+  background-attachment: fixed;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
   display: flex;
@@ -107,7 +120,91 @@ body {
 
 /* projects */
 
-#carousel-wrapper {
+
+#projects-wrapper{
+  width: 100vw;
+}
+
+
+#projects {
+  margin-top: 30em;
+  width: 100%;
+  background-color:rgb(255, 255, 255, 0.75);
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 25px 0 black;
+  font-family: monospace;
+}
+
+#projects h1 {
+  padding-top:1em;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Major Mono Display', monospace;
+  word-spacing: -10px;
+}
+
+#project-tile-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 4px, 4px;
+                padding: 4px;
+                width: 69vw;
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px 0 black;
+  font-size: 1.2em;
+  margin: 1em;
+  width: 50em;
+}
+
+.project-tile a{
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
+}
+
+.project-tile a:hover{
+  color: #2d47a8;
+}
+
+.project-link {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 2em !important;
+  color: black;
+  text-decoration: none;
+}
+
+
+.project-img {
+  min-height: 30vh;
+  min-width: 335px;
+  max-width: 40vw;
+  box-shadow: 0 0 2px 0 #2d47a8;
+  margin: 1em;
+}
+
+.repo-link-wrapper {
+  display: inline;
+}
+
+.repo-link {
+  text-decoration: underline !important;
+}
+
+
+
+/* #carousel-wrapper {
 
   float: right;
   margin-right: 4vw;
@@ -125,13 +222,12 @@ body {
   justify-content: center;
   flex-grow: 1 !important;
   flex-wrap: wrap; */
-}
 
-.carousel-slide {
+/* .carousel-slide {
   background-color: white;
   height: 90vh;
   width: 100%;
-}
+} */
 
 /* projects styles */
 
@@ -144,13 +240,11 @@ body {
   justify-content: center;
 } */
 
-/* #project-tile-wrapper {
-  background-color: rgb(255, 255, 255, 0.75);
-  width: 90vw;
-  height: 90vh;
+ /* #project-tile-wrapper {
   display: flex;
-}
-
+  flex-grow: 1;
+} */
+/*
 #project-description-wrapper {
   display: flex;
   width: fit-content;
@@ -165,31 +259,29 @@ body {
   text-align: left;
 } */
 
-/* #project-img-text-wrapper {
-  display: flex;
-  justify-content: space-between;
-} */
 
 /* #project-tech-wrapper {
   display: flex;
   flex-direction: column;
-  font-size: calc(10px + 2vw);
-  padding-left: 2vw;
-} */
+  font-size: calc(10px + .8vw);
+  padding-left: 10%;
+}
 
-/* #project-tech-wrapper * {
+#project-tech-wrapper * {
   padding-top: 5px;
-} */
+}
 
-/* #project-tech-wrapper ul {
+#project-tech-wrapper ul {
   margin: 0;
-} */
+  padding-left: 3vw;
+}
 
-/* #project-tech-wrapper li {
+#project-tech-wrapper li {
   text-align: left;
-} */
+  
+}
 
-/* #tech-wrapper p {
+#tech-wrapper p {
   margin: 0;
   font-size: calc(10px + 2vw);
   text-align: left;
@@ -203,44 +295,49 @@ body {
   font-size: calc(10px + 2vw);
 } */
 
-.project-img {
+ /* .project-img {
   max-height: 40vh;
   max-width: 40vw;
   box-shadow: 0 0 2px 0 #2d47a8;
   margin-left: 2vw;
-}
-
-/* #link-img-wrapper {
+} */
+/*
+#link-img-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-} */
+} 
 
-/* 
-.repo-link-wrapper {
+
+#repo-link-wrapper {
   display: flex;
-} */
+}
 
-/* .repo-link {
-  margin-top: 2vh;
+#repo-link-wrapper p {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.repo-link {
   font-size: calc(10px + 2vw);
-  padding-right: 40px;
-  padding-left: 40px;
   text-decoration: underline !important;
-}   */
+}   
 
 
-/* .control-arrow {
+.control-arrow {
   width: 4vw !important;
-} */
-/* 
+}
+
 .control-next.control-arrow:before {
   border-left: 40px solid #193ca2 !important;
-} */
+}
 
-/* .control-arrow:before {
+ .control-arrow:before {
   border-top: 40px solid transparent !important;
   border-bottom: 40px solid transparent !important;
-} */
+}
 
+.carousel .control-prev.control-arrow:before {
+  border-right: 40px solid #193ca2 !important;
+} */
 
