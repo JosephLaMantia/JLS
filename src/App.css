@@ -1,38 +1,246 @@
-.App {
+/* #root {
+  width: 100vw;
+  height: 100vh;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+} */
+
+body {
+  background: url('https://cutewallpaper.org/21/aesthetic-anime-desktop-wallpaper/1920x1080-Photo-Background-Elkgroveses.com.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+
+/* sidenav */
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%;
+  width: 30vw; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color:rgb(255, 255, 255, 0.50);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  box-shadow: 0 0 25px 0 black;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: calc(10px + 2vw);
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* welcome */
+
+#welcome-section {
+  float: right;
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-left: 25px;
+}
+
+#welcome-text-wrapper {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  background-color: rgb(255, 255, 255, 0.95);
+  width: 50vw;
+  height: calc(200px + .1vw);
+  box-shadow: 0 0 25px 0 black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#welcome-text-wrapper h1{
+  font-size: calc(10px + 2vw);
+  margin-bottom: 0;
+  flex-grow: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#welcome-text-wrapper h2{
+  font-size: calc(8px + 1vw);
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-grow: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#welcome-text-wrapper p{
+  font-size: calc(5px + 1vw);
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+/* projects */
+
+#carousel-wrapper {
+
+  float: right;
+  margin-right: 4vw;
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-left: calc(25px + 30vw);
+  margin-top: 3vh;
+
+
+
+  /* display: flex;
+  justify-content: center;
+  flex-grow: 1 !important;
+  flex-wrap: wrap; */
+}
+
+.carousel-slide {
+  background-color: white;
+  height: 90vh;
+  width: 100%;
+}
+
+/* projects styles */
+
+/* #projects {
+  background-color:rgb(255, 255, 255, 0.75);
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* #project-tile-wrapper {
+  background-color: rgb(255, 255, 255, 0.75);
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+}
+
+#project-description-wrapper {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+}
+
+#description p {
+  font-size: calc(10px + 2vw);
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-align: left;
+} */
+
+/* #project-img-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* #project-tech-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vw);
+  padding-left: 2vw;
+} */
+
+/* #project-tech-wrapper * {
+  padding-top: 5px;
+} */
+
+/* #project-tech-wrapper ul {
+  margin: 0;
+} */
+
+/* #project-tech-wrapper li {
+  text-align: left;
+} */
+
+/* #tech-wrapper p {
+  margin: 0;
+  font-size: calc(10px + 2vw);
+  text-align: left;
+} */
+
+/* #projects h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  font-size: calc(10px + 2vw);
+} */
+
+.project-img {
+  max-height: 40vh;
+  max-width: 40vw;
+  box-shadow: 0 0 2px 0 #2d47a8;
+  margin-left: 2vw;
+}
+
+/* #link-img-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+} */
 
-.App-link {
-  color: #61dafb;
-}
+/* 
+.repo-link-wrapper {
+  display: flex;
+} */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .repo-link {
+  margin-top: 2vh;
+  font-size: calc(10px + 2vw);
+  padding-right: 40px;
+  padding-left: 40px;
+  text-decoration: underline !important;
+}   */
+
+
+/* .control-arrow {
+  width: 4vw !important;
+} */
+/* 
+.control-next.control-arrow:before {
+  border-left: 40px solid #193ca2 !important;
+} */
+
+/* .control-arrow:before {
+  border-top: 40px solid transparent !important;
+  border-bottom: 40px solid transparent !important;
+} */
+
+
